@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+    <section class="view2"> 
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+            <source src="montage.mp4" type="video/mp4">
+        </video>
+    </section>
+    <div class="header">
+        <img class="icon" src="pumpking.webp" alt=""/>
+        <h1>UTS Spook-Tacular Halloween Festival 2023</h1>
+    </div>
+    <div class="main">
+        <div id="heroOverlay"></div>
+        <div id="hero"></div>
+        <section class="sidebyside">
+            <div class="sideleft">
+                <img id="sideleftimg"src='HalloweenFestival2023.jpg'>
+            </div>
+            <div class="sideright">
+                <h1>Welcome to the 2023 Spook-Tacular Halloween Festival!</h1>
+                <br>
+                <p>    Get ready for a day of frights, spooks, thrills, and fun cuz it is time for the Spook-Tacular Halloween Festival 2023, one of the biggest event of the year!  🎃🎃🎃‼️ </p>
+                <br>     
+                <p>    This jampacked event will be featuring 10 societies including: anime@UTS, Drawing Circle, UTS Puzzle Society, K-Pop UTS, Playmakers, Gamers Guild @ UTS, MuscUTS, UTS Pokemon, UTS Maker Society and UTS Literary Society, who will deliver BIG THINGS to the festivals 😈😈😈</p>
+                <br>    
+                <p>    These include: Gaming LAN parties, The Minigame Parlor, The Karaoke Bar,  Jack O'Lantern 3D Print workshops, Horror Houses, Competitions and so much more. </p>
+                <br>    
+                <p style="font-style:italic">This is a ticketed event. Please make sure to order your tickets via the <a href="">ActivateUTS website!</a></p>
+            </div>
+        </section>
+
+    </div>
+    <script>
+        let image = document.getElementById("hero");
+        //image.style.backgroundPosition="0px -1px";
+        image.style.backgroundAttachment = "scroll";
+
+        function funnyBackgroundMovement() {
+            let scrollY = -window.scrollY/10;
+            let scrollX = -window.scrollX/10;
+            let scrollCalc = scrollX + "px " + scrollY + "px" ;
+
+            image.style.backgroundPosition=scrollCalc;
+            
+        }
+        document.addEventListener("scroll", funnyBackgroundMovement);
+
+        // funnyBackgroundMovement();
+    </script>
+   </body>
+</html>

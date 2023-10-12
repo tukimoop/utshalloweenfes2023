@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1vw;
+    font: inherit;
+    color: white;
+    vertical-align: baseline; }
+
+
+h1 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+    border-bottom: 2px solid #ccc;
+}
+
+section {
+    margin: 0 auto;
+}
+
+div {
+    -webkit-transform-origin: left top; 
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 468px;
+    /* background: #e65c00; */
+    background-image: url(grid.png);
+    background-repeat: repeat;
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    letter-spacing: 1px; 
+    font-weight: 600;
+    font-family: "Creepster", 'Courier New';
+    position:relative;
+    border-bottom: 12px solid black;
+}
+
+.icon {
+    width: 8rem;
+    margin: 1vh 0;
+    /*animation: ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s); */
+}
+
+.header h1 {
+    width: 60vw;
+    font-size: 6rem;
+    display:inline;
+    margin-left: 10vw;
+    text-align: center;
+}
+    
+@media screen and (max-width: 769px) {
+    header {
+    display: none; } }
+
+
+.view2 {
+    width:100%;
+    position: fixed;
+    filter: brightness(50%);
+}
+
+.view2 video {
+    width: 100%;
+    position:fixed;
+    top:-150px;
+}
+
+#hero {
+    height: 900px;
+    object-fit: fill;
+    background: transparent url('HalloweenFestival2023.jpg') no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-repeat: no-repeat; */
+    background-attachment: scroll; 
+    background-position: 0 -69px;
+    -webkit-transition: background-position 0.6s ease;
+    -moz-transition: background-position 0.6s ease;
+    -o-transition: background-position 0.6s ease;
+    transition: background-position 0.6s ease;
+}
+
+#heroOverlay {
+    background: url('logospreadright.png') no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+}
+
+.main {
+    position:relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 29, 29);
+    font-family: Inter;
+    position: relative;
+}
+
+.sidebyside {
+    /* margin: 4vw; */
+    width: 90%;
+    max-width: 1280px;
+    padding: 64px 0;
+    display:flex;
+    align-items: flex-start;
+}
+
+.sideleft {
+    /* flex-basis:auto; */
+    max-width: 300px;
+    display: flex;
+    flex-basis: 35%;
+}
+
+#sideleftimg {
+    /* height: 100%;
+    width: 100%; */
+    /* height: 600px;
+    width: 300px; */
+    /* background: transparent url('HalloweenFestival2023.jpg') no-repeat center top;
+    background-size: contain; */
+    /* height: 100%; */
+    width: 100%;
+}
+
+.sideright {
+    /* margin-left: 3em; */
+    padding-left: 35px;
+    width: 100%;
+    flex-basis:65%;
+}
+
+.sideright h1 {
+    font-size: 54pt;
+}
+
+.sideright p {
+    font-size: 20pt;
+}
+
+@media screen and (max-width: 768px) {
+    .sideright p {
+        font-size: 72px;
+    }
+
+}
+
