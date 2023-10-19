@@ -7,9 +7,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: white;
     vertical-align: baseline; }
 
+body {
+    background-color: black;
+}
 
 h1 {
-    font-weight: 600;
+    width: 60vw;
+    font-size: 3rem;
+    display:inline;
+    text-align: center;
 }
 
 a {
@@ -29,7 +35,12 @@ div {
     transform-origin: left top;
 }
 
-.header {
+.something {
+    margin: 10px 40px;
+    text-align: center;
+}
+
+#header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -55,11 +66,10 @@ div {
     animation-delay: calc(var(--scroll) * -1s); */
 }
 
-.header h1 {
+#header h1 {
     width: 60vw;
-    font-size: 2rem;
+    font-size: 4vh;
     display:inline;
-    margin-left: 10vw;
     text-align: center;
 }
     
@@ -84,13 +94,17 @@ div {
     -o-transition: background-position 0.6s ease;
     transition: background-position 0.6s ease;
     overflow: hidden;
+    
 }
 
 #herovideo {
     width: 100%;
     top: -150px;
     filter: brightness(50%);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
     -webkit-transition: background-position 0.6s ease;
     -moz-transition: background-position 0.6s ease;
     -o-transition: background-position 0.6s ease;
@@ -115,6 +129,11 @@ div {
     height: 100%;
     background-color: rgb(28, 29, 29);
     font-family: Inter;
+    position: relative;
+}
+
+#bigimage {
+    width:100%;
     position: relative;
 }
 
@@ -167,14 +186,21 @@ div {
 
 } */
 
-.selectorsmenu {
-    width: 100%;
+.clubselectors {
     display: flex;
-    flex-direction: row;
+}
+
+.selectorsmenu {
+    flex-basis: 25%;
+    /* width: 30%; */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
 }
 
 .selectoritem {
-    width: 15%;
+    max-width: 40%;
     background-color: grey;
     padding: 15px;
 }
@@ -187,4 +213,16 @@ div {
     width: 100%;
 }
 
-.selector-selected
+.selectorsmenucontent {
+    flex-basis: 70%;
+}
+
+.clubcontent {
+    width: 100%;
+    height: 100%;
+}
+
+
+.clubcontent img {
+    height: 10%;
+}
