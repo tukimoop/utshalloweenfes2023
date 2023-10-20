@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
+        <!-- i fucking hate my life for this why did i do this manually i should've just gotten a CMS -->
 
         <div id="hero">        
             <video playsinline autoplay muted loop poster="polina.jpg" id="herovideo">
@@ -52,72 +52,67 @@
                 <br>
                 <br>
             </div>
-            <section class="clubselectors">
-                <section class="selectorsmenu">
-                    <div class="selectoritem" id="anime">
-                        <img src="logos/anime.png">
+            <section class="clubstuff">
+
+                <section class="clubbing" id="anime">
+                    <div class="clubimage" id="anime">
+                        <img src="clubposts/anime.png">
                     </div>
-                    <div class="selectoritem" id="puzzle">
-                        <img src="logos/puzzlesoc.png">
-                    </div>
-                    <div class="selectoritem" id="kuts">
-                        <img src="logos/kuts.png">
-                    </div>
-                    <div class="selectoritem" id="circle">
-                        <img src="logos/drawingcircle.png">
-                    </div>
-                    <div class="selectoritem" id="gg">
-                        <img src="logos/gg.png">
-                    </div>
-                    <div class="selectoritem" id="litsoc">
-                        <img src="logos/litsoc.png">
-                    </div>
-                    <div class="selectoritem" id="makesoc">
-                        <img src="logos/makesocwhite.png">
-                    </div>
-                    <div class="selectoritem" id="playmakers">
-                        <img src="logos/playmakers.png">
-                    </div>
-                </section>
-                <section class="selectorsmenucontent">
                     <div class="clubcontent" id="anime">
                         <h1>anime@UTS</h1>
                         <p>Anime@UTS will be hosting a MINI GAME PARLOUR</p>
                         <br>
-                            Featuring:
+                        <p>Featuring:</p>
+                        <br>
                             🍧 Shaved ice emotemote CRANK THAT ICE SHAVER AS FAST AS YOU CAN and enjoy a cool refreshing dessert made by YOU as you stroll through the halloween festival.
-                            🔫 Shooting range Where you'll be defeating the yokais of UTS :NeroSmug:
+                            <br>
+                            🔫 Shooting range Where you'll be defeating the yokais of UTS 
+                            <br>
                             🐟 Fish scooping  Compete against one another to see who can scoop the most fish :noelroar:
                         <br>
+                        <br>
                             Complete all the activities in our mini game parlour for a chance to win prizes from one of our sponsors 👀
-                            :gundamn: AnimeAbbotsford, Joilli Creations, Via Artists 
+                            AnimeAbbotsford, Joilli Creations, Via Artists 
                         </p>
-                        <img src="clubposts/anime.png">
+                    </div>
+                </section>
+                <br>
+                <section class="clubbing" id="kuts">
+                    <div class="clubimage" id="kuts">
+                        <img src="clubposts/kuts.jpg">
+                    </div>
+                    <div class="clubcontent" id="kuts">
+                        <h1>K-Pop UTS</h1>
+                        IT'S TIME FOR HALLOWEEN 🎃
+                        KUTS, along with 9 other societies is bringing you an amazing day jam packed with activities, include Gaming LAN parties, The Minigame Parlor, The Karaoke Bar, Jack O'Lantern 3D Print workshops, Horror Houses, Competitions and so much more!
+
+                        In true KUTS fashion, we'll be the host of the 🎤 KARAOKE BAR 🎤 and providing you with some refreshing 🍹 HWACHAE 🍹 Not only that, we'll be trick or treating with cute stickers too 👻
+
+                        Register now on ActivateUTS!
                     </div>
                 </section>
             </section>
-            <br style="clear: both" />
-            
+         
         </div>
     <!-- <div id="heroOverlay"></div> -->
     <script>
         let video = document.getElementById("herovideo");
         let header = document.getElementById("header");
-        let headerHeight = header.clientHeight/2;
-        // image.style.backgroundAttachment = "scroll";
-        //video.style.top = "scroll";
-        // console.log("help")
+        let headerHeight = header.clientHeight;
+
 
         function funnyBackgroundMovement() {
-            let scrollY = -window.scrollY/5;
-            let scrollCalc = headerHeight + scrollY + "px" ;
+             let scrollY = window.scrollY;
+             let scrollCalc = headerHeight - scrollY + "px" ;
 
-            video.style.top=scrollCalc;
-            // console.log(video)
+             video.style.top = scrollCalc;
+
         }
-        document.addEventListener("scroll", funnyBackgroundMovement);
+         document.addEventListener("scroll", funnyBackgroundMovement);
 
-        funnyBackgroundMovement();
+         //video.style.top=headerHeight + "px";
+
+         funnyBackgroundMovement();
     </script>
    </body>
 </html>

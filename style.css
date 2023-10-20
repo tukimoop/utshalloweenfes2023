@@ -186,43 +186,41 @@ div {
 
 } */
 
-.clubselectors {
-    display: flex;
-}
-
-.selectorsmenu {
-    flex-basis: 25%;
-    /* width: 30%; */
-    left: 0;
+.clubstuff {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 0;
 }
 
-.selectoritem {
-    max-width: 40%;
-    background-color: grey;
-    padding: 15px;
-}
-
-.selectoritem:hover {
-    cursor: pointer;
-}
-
-.selectoritem img {
-    width: 100%;
-}
-
-.selectorsmenucontent {
-    flex-basis: 70%;
+.clubbing {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 2rem;
+    padding: 0 1rem 0 90px;
+    height: auto;
+    font-size: 20px;
 }
 
 .clubcontent {
-    width: 100%;
-    height: 100%;
+    padding: 2rem;
+}
+
+.clubcontent h1 {
+    text-align: center;
 }
 
 
-.clubcontent img {
-    height: 10%;
+.clubimage {
+    width: 70%;
+}
+
+.clubimage img {
+    width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .clubbing {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
 }
