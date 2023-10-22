@@ -6,87 +6,314 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-    <div class="view2"> 
-        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-            <source src="montage.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="header">
-        <img class="icon" src="pumpking.webp" alt=""/>
-        <h1>UTS Spook-Tacular Halloween Festival 2023</h1>
-    </div>
-    <div class="main">
-        <div id="heroOverlay"></div>
-        <div id="hero"></div>
-        <section class="sidebyside">
-            <div class="sideleft">
-                <img id="sideleftimg"src='HalloweenFestival2023.jpg'>
-            </div>
-            <div class="sideright">
-                <h1>Welcome to the 2023 Spook-Tacular Halloween Festival!</h1>
-                <br>
-                <p>Get ready for a day of frights, spooks, thrills, and fun cuz it is time for the Spook-Tacular Halloween Festival 2023, one of the biggest event of the year!  🎃🎃🎃‼️ </p>
-                <br>     
-                <p>This jampacked event will be featuring 10 societies including: anime@UTS, Drawing Circle, UTS Puzzle Society, K-Pop UTS, Playmakers, Gamers Guild @ UTS, MuscUTS, UTS Pokemon, UTS Maker Society and UTS Literary Society, who will deliver BIG THINGS to the festivals 😈😈😈</p>
-                <br>    
-                <p>These include: Gaming LAN parties, The Minigame Parlor, The Karaoke Bar,  Jack O'Lantern 3D Print workshops, Horror Houses, Competitions and so much more. </p>
-                <p>We have also confirmed 3 live performances from Matcha Overkill, Rollersyd and UTS’s very own MuscUTS, who will be performing on the day</p>
-                <br>
-                <p>Furthermore, we are conducting a costume competition towards the end of the festival to show off your best Halloween outfits to the crowd!</p>
-                <br>
-                <p>And don’t forget, there are prizes to be gained on the day from our list of sponsors who are helping to keep this event alive and running</p>
-                <br>    
-                <p style="font-style:italic">This is a ticketed event. Please make sure to order your tickets via the <a href="">ActivateUTS website!</a></p>
-            </div>
-        </section>
-        <h1>What each club is doing!</h1>
-        <section class="selectorsmenu">
-            <div class="selectoritem" id="anime">
-                <img src="logos/anime.png">
-            </div>
-            <div class="selectoritem" id="puzzle">
-                <img src="logos/puzzlesoc.png">
-            </div>
-            <div class="selectoritem" id="kuts">
-                <img src="logos/kuts.png">
-            </div>
-            <div class="selectoritem" id="circle">
-                <img src="logos/drawingcircle.png">
-            </div>
-            <div class="selectoritem" id="gg">
-                <img src="logos/gg.png">
-            </div>
-            <div class="selectoritem" id="litsoc">
-                <img src="logos/litsoc.png">
-            </div>
-            <div class="selectoritem" id="makesoc">
-                <img src="logos/makesocwhite.png">
-            </div>
-            <div class="selectoritem" id="playmakers">
-                <img src="logos/playmakers.png">
-            </div>
+    </head>
+    <body>
+        <!-- i fucking hate my life for this why did i do this manually i should've just gotten a CMS -->
 
-        </section>
+        <div id="hero">        
+            <video playsinline autoplay muted loop poster="polina.jpg" id="herovideo">
+                <source src="montage.mp4" type="video/mp4">
+            </video>
+        </div>
 
-    </div>
+        <div id="header">
+            <img class="icon" src="pumpking.webp" alt=""/>
+            <h1>UTS Spook-Tacular Halloween Festival 2023</h1>
+        </div>
+
+        <img id="bigimage" src="layer.png">
+
+        <div class="main">
+            <section class="sidebyside">
+                <div class="sideleft">
+                    <img id="sideleftimg"src='HalloweenFestival2023.jpg'>
+                </div>
+                <div class="sideright">
+                    <h1>Welcome to the 2023 Spook-Tacular Halloween Festival!</h1>
+                    <br>
+                    <p>Get ready for a day of frights, spooks, thrills, and fun cuz it is time for the Spook-Tacular Halloween Festival 2023, one of the biggest event of the year!  🎃🎃🎃‼️ </p>
+                    <br>     
+                    <p>This jampacked event will be featuring 10 societies including: anime@UTS, Drawing Circle, UTS Puzzle Society, K-Pop UTS, Playmakers, Gamers Guild @ UTS, MuscUTS, UTS Pokemon, UTS Maker Society and UTS Literary Society, who will deliver BIG THINGS to the festivals 😈😈😈</p>
+                    <br>    
+                    <p>These include: Gaming LAN parties, The Minigame Parlor, The Karaoke Bar,  Jack O'Lantern 3D Print workshops, Horror Houses, Competitions and so much more. </p>
+                    <p>We have also confirmed 3 live performances from Matcha Overkill, Rollersyd and UTS’s very own MuscUTS, who will be performing on the day</p>
+                    <br>
+                    <p>Furthermore, we are conducting a costume competition towards the end of the festival to show off your best Halloween outfits to the crowd!</p>
+                    <br>
+                    <p>And don’t forget, there are prizes to be gained on the day from our list of sponsors who are helping to keep this event alive and running</p>
+                    <br>    
+                    <p style="font-style:italic">This is a ticketed event. Please make sure to order your tickets via the <a href="">ActivateUTS website!</a></p>
+                </div>
+            </section>
+            <br>
+            <div class="something">
+                <h1>What each club is doing!</h1>
+                <br>
+                <br>
+                <br>
+            </div>
+            <section class="clubstuff">
+
+                <section class="clubbing" id="anime">
+                    <div class="clubimage" id="anime">
+                        <img src="clubposts/anime.png">
+                    </div>
+                    <div class="clubcontent" id="anime">
+                        <h1>anime@UTS</h1>
+                        <p>Anime@UTS will be hosting a MINI GAME PARLOUR</p>
+                        <br>
+                        <p>Featuring:</p>
+                        <br>
+                            🍧 Shaved ice emotemote CRANK THAT ICE SHAVER AS FAST AS YOU CAN and enjoy a cool refreshing dessert made by YOU as you stroll through the halloween festival.
+                            <br>
+                            🔫 Shooting range Where you'll be defeating the yokais of UTS 
+                            <br>
+                            🐟 Fish scooping  Compete against one another to see who can scoop the most fish 
+                        <br>
+                        <br>
+                            Complete all the activities in our mini game parlour for a chance to win prizes from one of our sponsors 👀
+                            AnimeAbbotsford, Joilli Creations, Via Artists 
+                        </p>
+                    </div>
+                </section>
+                <br>
+                <section class="clubbing" id="kuts">
+                    <div class="clubimage" id="kuts">
+                        <img src="clubposts/kuts.jpg">
+                    </div>
+                    <div class="clubcontent" id="kuts">
+                        <h1>K-Pop UTS</h1>
+                        <br>
+                        IT'S TIME FOR HALLOWEEN 🎃
+                        <br>
+                        KUTS, along with 9 other societies is bringing you an amazing day jam packed with activities, include Gaming LAN parties, The Minigame Parlor, The Karaoke Bar, Jack O'Lantern 3D Print workshops, Horror Houses, Competitions and so much more!
+                        <br>
+                        <br>
+                        In true KUTS fashion, we'll be the host of the 🎤 KARAOKE BAR 🎤 and providing you with some refreshing 🍹 HWACHAE 🍹 Not only that, we'll be trick or treating with cute stickers too 👻
+                        <br>
+                        <br>
+                        Register now on ActivateUTS!
+                    </div>
+                </section>
+
+                <section class="clubbing" id="puzzlesoc">
+                    <div class="clubimage" id="puzzlesoc">
+                        <img src="clubposts/puzzlesoc.jpg">
+                    </div>
+                    <div class="clubcontent" id="puzzlesoc">
+                        <h1>UTS Puzzle Society</h1>
+                        <br>
+                        The 🎃 𝗦𝗽𝗼𝗼𝗸-𝗧𝗮𝗰𝘂𝗹𝗮𝗿 𝗛𝗮𝗹𝗹𝗼𝘄𝗲𝗲𝗻 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹 𝟮𝟬𝟮𝟯 🎃 is coming up soon, and PuzzSoc is proud to present:
+                        <br>
+                        <br>
+                        🧩 𝗣𝘂𝘇𝘇𝗹𝗲𝘀 𝗶𝗻 𝘁𝗵𝗲 𝗗𝗮𝗿𝗸 🔦
+                        <br>
+                        <br>
+
+                        𝙇𝙚𝙩'𝙨 𝙥𝙡𝙖𝙮 𝙖 𝙜𝙖𝙢𝙚...
+                        <br>
+                        𝗣𝘂𝘇𝘇𝗹𝗲 𝗦𝗼𝗰𝗶𝗲𝘁𝘆 beckons ye brave souls, to attempt our "𝗣𝘂𝘇𝘇𝗹𝗲𝘀 𝗶𝗻 𝘁𝗵𝗲 𝗗𝗮𝗿𝗸".
+                        <br>
+                        As you enter into the darkness... the door 𝘀𝗹𝗮𝗺𝘀 𝘀𝗵𝘂𝘁 behind you. 🧠 Solve the cryptic puzzles inside with the help of your team before time runs out ⏰, lest you be trapped inside forever!
+                        <br>
+                        <br>
+                        Beware though for what’s lurking, waiting for you in the shadows. Will you conquer The Puzzler’s dastardly trials and come out alive? Or will you never be heard from again. 💀 Come find out if you dare…
+                        <br>
+                        <br>
+                        Bookings for the escape room will be on the day.
+                        <br>
+                        Come to our room and make your booking
+                        <br>
+                        📍𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝟭𝟭, 𝗕𝗮𝘀𝗲𝗺𝗲𝗻𝘁 𝗟𝗲𝘃𝗲𝗹 𝟮
+                        <br>
+                        <br>
+                        We look forward to seeing y'all there o7
+                        <br>
+                    </div>
+                </section>
+
+                <section class="clubbing" id="playmakers">
+                    <div class="clubimage" id="playmakers">
+                        <img src="logos/playmakers.png">
+                    </div>
+                    <div class="clubcontent" id="playmakers">
+                        <h1>Playmakers UTS</h1>
+                        <br>
+                        <b>🎃 HALLOWEEN GAME JAM Presentation! 🎃</b>
+                        <br>
+                        BOO! Hey everyone! 😎 
+                        <br>
+                        <br>
+                        <br>
+                        Happy to announce that we have a Halloween Game Jam coming up for the scary season of Halloween! 👻
+                        <br> 
+                        <br>
+                        And what makes it even better? We will show of the result of this Game Jam to the upcoming UTS Halloween Festival for everyone to be able to come and play them! ❤️ 
+                        <br>
+                        <br>
+                        <br>
+                        From there, you will  also have a chance to come in and out will vote for the best game out of the bunch!
+                        <br>
+                        <br>
+                        The winners will receive:
+                        <br>
+                        <b>- A Halloween-inspired plushie (will be revealed later 😳)!</b>
+                        <br>
+                        <b>- $50 Prezzee Voucher! 🤑 </b>
+                        <br>
+                        <br>
+                        <br>
+                        <b>Themes will be revealed on the start of the Game Jam, GET EXCITED GUYS! 🎃 </b>
+                        <br>
+                        <br>
+                        Here are all of the important details:
+                        <br>
+                        <br>
+                        <b>- When:</b>
+                        <br>
+                        <br>
+                        Game Jam Duration:
+                        <br>
+                        This Sunday, 22nd of October at 12PM - 29th of October at 9AM for the Game Jam!
+                        <br>
+                        <br>
+                        Festival Day - Presentation & Voting Period:
+                        <br>
+                        Sunday 29th October 12PM-4PM
+                        <br>
+                        Winners will start to be announced at 4PM!
+                        <br>
+                        <br>
+                        <b>- Where:</b>
+                        <br>
+                        Online (itch.io), In-person day at the UTS Halloween Festival!
+                        <br>
+                        <br>
+                        <b>- How To Join:</b>
+                        <br>
+                        Get a ticket from the ActivateUTS event below to be elligible for the reward!
+                        <br>
+                        <br>
+                        <br>
+                        <b>Best of luck to everyone, and get ready for a FRIGHT with the UTS Halloween Festival!!! 😱 😱 😱</b>
+                        <br>
+                        <br>
+                        <b>Get your Halloween Festival ticket here:</b>  https://www.activateuts.com.au/events/spook-tacular-halloween-festival-2023/
+
+                    </div>
+                </section>
+
+                <section class="clubbing" id="pokesoc">
+                    <div class="clubimage" id="pokesoc">
+                        <img src="clubposts/pokesoc.png">
+                    </div>
+                    <div class="clubcontent" id="pokesoc">
+                        <h1>UTS Pokémon Club</h1>
+                        <br>
+                        🎃 Spook-Tacular Halloween Festival 2023 🎃
+                        <br>
+                        Hey @everyone, join us on the 29th of October from 12pm to 6pm for halloween fun 👏
+                        <br>
+                        <br>
+                        It’s time for spooky season, and Pokémon is here to celebrate with our very own 
+                        <br>
+                        👻 Spooky Pokémon Gym! 👻
+                        <br>
+                        <br>
+                        You can find us downstairs in B11.B3.101
+                        <br>
+                        <br>
+                        Things of note:
+                        <br>
+                        <br>
+                        Battles with Showdown
+                        <br>
+                        Anyone can participate
+                        <br>
+                        Minigames
+                        <br>
+                        Use one of our pre-built teams or bring your own
+                        <br>
+                        WIN YOUR OWN GLOW IN THE DARK GYM BADGE
+                        <br>
+                        <br>
+                        <br>
+                        https://discord.gg/NZAK9rV2pD?event=1160419084232564758
+                        <br>
+                    </div>
+                </section>
+
+                <section class="clubbing" id="litsoc">
+                    <div class="clubimage" id="litsoc">
+                        <img src="clubposts/litsoc.png">
+                    </div>
+                    <div class="clubcontent" id="litsoc">
+                        <h1>Literary Society</h1>
+                        <p>🎃👾UTS LITSOC @ SPOOK-TACULAR HALLOWEEN FEST 👾🎃</p>
+                        <br>
+                        LitSoc will be hosting bookmark making sessions at the Spook-Tacular Halloween Fest! 📚👻⚡️
+                        <br>
+                        <br>
+                        ✨ THE DETAILS ✨
+                        <br>
+                        🗓️ DATE: Sunday, October 29
+                        <br>
+                        ⏰ TIME: 12pm-6pm
+                        <br>
+                        📍 LOCATION: CB11.B1-B3
+                        <br>
+                        <br>
+                        FYI: The Spook-Tacular Halloween Fest will also be host to many, MANY more activities from all your favourite societies including anime@uts, Drawing Circle, UTS Puzzle Society, K-Pop UTS, Playmakers, Gamers Guild @ UTS, MuscUTS, UTS Pokemon, UTS Maker Society, and of course we’ll be there too! ☁️🌼🔮
+                        <br>
+                        <br>
+                        We also have three confirmed live performances from Matcha Overkill, Rollersyd and UTS’ very own MuscUTS, who will be performing on the day! 🎹🎸🎶
+                        <br>
+                        <br>
+                        Furthermore, we are conducting a costume competition towards the end of the festival, with a chance to show off your best Halloween outfits 🧞🧚🏽‍♀️🧜🏽‍♀️
+                        <br>
+                        <br>
+                        Don’t forget—there are prizes to be won on the day from our sponsors who are helping to keep the event running!! 🏆🥇🎁 
+                        <br>
+                    </div>
+                </section>
+
+                <section class="clubbing" id="drawingcircle">
+                    <div class="clubimage" id="drawingcircle">
+                        <img src="clubposts/drawingcircle.jpg">
+                    </div>
+                    <div class="clubcontent" id="drawingcircle">
+                        <h1>Drawing Circle</h1>
+                        <br>
+                        Join us for this year's Spook-Tacular Halloween Festival‼️ Drawing Circle is holding its own activities alongside the 9 other societies involved in the event!
+                        <br>
+                        <br>
+                        We're offering our usual Etch 'n' Sketch space as well as a nail painting section for some devilish fun 😈
+                        <br>
+                    </div>
+                </section>
+
+            </section>
+         
+        </div>
+    <!-- <div id="heroOverlay"></div> -->
     <script>
-        let image = document.getElementById("hero");
-        //image.style.backgroundPosition="0px -1px";
-        image.style.backgroundAttachment = "scroll";
+        let video = document.getElementById("herovideo");
+        let header = document.getElementById("header");
+        let headerHeight = header.clientHeight;
+
 
         function funnyBackgroundMovement() {
-            let scrollY = -window.scrollY/10;
-            let scrollX = -window.scrollX/10;
-            let scrollCalc = scrollX + "px " + scrollY + "px" ;
+             let scrollY = window.scrollY;
+             let scrollCalc = headerHeight - scrollY + "px" ;
 
-            image.style.backgroundPosition=scrollCalc;
-            
+             video.style.top = scrollCalc;
+
         }
-        document.addEventListener("scroll", funnyBackgroundMovement);
+         document.addEventListener("scroll", funnyBackgroundMovement);
 
-        // funnyBackgroundMovement();
+         //video.style.top=headerHeight + "px";
+
+         funnyBackgroundMovement();
     </script>
    </body>
 </html>
