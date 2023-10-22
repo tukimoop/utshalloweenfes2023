@@ -191,7 +191,8 @@ div {
 .clubbing {
     display: grid;
     grid-template-rows: min-content 1fr;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    /* grid-template-columns: repeat(2,minmax(0,1fr)); */
+    grid-template-columns: minmax(0,1fr) minmax(0,2fr);
     gap: 2rem;
     padding: 0 1rem 0 90px;
     height: auto;
@@ -208,7 +209,7 @@ div {
 
 
 .clubimage {
-    width: 80%;
+    width: 90%;
 }
 
 .clubimage img {
@@ -223,10 +224,13 @@ div {
         padding: 0 10px 0 10px;
     }
     .clubimage {
-        width: 100%
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
     }
     .clubimage img {
-        max-width: 100%;
+        max-width: 80%;
     }
 
 
